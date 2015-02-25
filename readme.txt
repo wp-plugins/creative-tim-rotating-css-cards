@@ -15,8 +15,6 @@ This plugin will allow WordPress developers to use Creative Tim's Rotating CSS C
 
 For more information see [GitHub](https://github.com/atwellpub/creative-tim-rotating-css-cards-wordpress-plugin)
 
-=== Example shortcode ===
-
 `
 /* note for the shortcode below to work in WordPress it will need to have all it's options on one line */
 [card 
