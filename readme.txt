@@ -45,9 +45,9 @@ You can use this this rotating CSS card for presenting your team or to show more
 [/card]
 `
 
-[Follow Development on GitHub ](https://github.com/inboundnow/landing-pages "Follow & Contribute to core development on GitHub")
+[Follow Development on GitHub ](https://github.com/atwellpub/creative-tim-rotating-css-cards-wordpress-plugin "Follow & Contribute to core development on GitHub")
  |
-[Follow Development on Twitter ](https://twitter.com/gitlandingpages "See our latest development commits on Twitter")
+[Follow Development on Twitter ](https://twitter.com/atwellpub "See our latest development commits on Twitter")
 
 
 == Installation ==
