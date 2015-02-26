@@ -76,7 +76,7 @@ body {
 }
 .card-container, .front, .back {
 	width: 100%;
-	min-height: 420px;
+	min-height: 454px;
 	border-radius: 4px;
 }
 .card .cover{
@@ -111,13 +111,14 @@ body {
 	margin-bottom:20px;
 }
 .card .back .content .main {
-    height: 215px;
+    height: auto;
+	font-size:12px;
 }
 
 .card .name {
     font-size: 22px;
     line-height: 28px;
-    margin: 10px 0 0;
+    margin: 10px 0 15px 0;
     text-align: center;
     text-transform: capitalize;
 }

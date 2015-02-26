@@ -1,6 +1,6 @@
 # Creative Tim Rotating CSS Cards - WordPress Plugin
 
-This plugin will allow WordPress developers to use [Creative Tim's Rotating CSS Cards](http://www.creative-tim.com/product/rotating-css-card) as a programmable shortcode. 
+This plugin will allow WordPress developers to use [Creative Tim's Rotating CSS Cards](http://www.creative-tim.com/product/rotating-css-card) through a programmable shortcode. 
 
 ## Licensing
 
@@ -9,6 +9,7 @@ Creative Tim provides information about how you are allowed to use their assets 
 ## Shortcode Example
 
 ```
+/* note for the shortcode below to work in WordPress it will need to have all it's options on one line */
 [card 
 	col_md = "4"
 	col_sm = "6"

@@ -86,12 +86,12 @@ if ( !class_exists( 'Creative_Tim_Css_Cards' ) ) {
 				'company' => 'Creative Tim',
 				'show_stars' => true,
 				'star_count' => 5,
-				'email' => 'hello@creative-tim.com',
-				'phone' => '+40746 461 075',
-				'website' => 'http://www.creative-tim.com/',
-				'twitter' => 'https://twitter.com/CreativeTim',
-				'facebook' => 'https://www.facebook.com/CreativeTim',
-				'googleplus' => 'http://www.creative-tim.com/contact-us',
+				'email' => '',
+				'phone' => '',
+				'website' => '',
+				'twitter' => '',
+				'facebook' => '',
+				'googleplus' => '',
 				'motto' => __('Start designing and developing faster.' , 'creative-tim-css-cards' )
 				
 			), $atts, 'card' );
