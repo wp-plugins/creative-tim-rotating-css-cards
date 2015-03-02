@@ -4,7 +4,7 @@ Plugin Name: Creative Tim - Rotating CSS Cards
 Plugin URI: http://www.creative-tim.com/product/rotating-css-card
 Description: Enable WP Admin to setup & display Creative Tim's Rotating CSS cards with a shortcoe. 
 Author: Inbound Now
-Version: 1.0.1
+Version: 1.0.2
 Author URI: http://www.twitter.com/atwellpub
 Text Domain: creative-tim-css-cards
 Domain Path: /lang/
@@ -28,7 +28,7 @@ if ( !class_exists( 'Creative_Tim_Css_Cards' ) ) {
 		*/
 		private static function define_constants() {
 
-			define('CREATIVE_TIM_CARDS_CURRENT_VERSION', '1.0.1' );
+			define('CREATIVE_TIM_CARDS_CURRENT_VERSION', '1.0.2' );
 			define('CREATIVE_TIM_CARDS_URLPATH', WP_PLUGIN_URL.'/'.plugin_basename( dirname(__FILE__) ).'/' );
 			define('CREATIVE_TIM_CARDS_PATH', WP_PLUGIN_DIR.'/'.plugin_basename( dirname(__FILE__) ).'/' );
 			define('CREATIVE_TIM_CARDS_SLUG', plugin_basename( dirname(__FILE__) ) );

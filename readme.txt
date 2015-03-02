@@ -7,7 +7,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: css, creative tim, cards, profile cards, company cards, flip cards
 Requires at least: 3.8
 Tested up to: 4.1
-Stable Tag: 1.0.1
+Stable Tag: 1.0.2
 
 This plugin will allow WordPress developers to use Creative Tim's Rotating CSS Cards through a programmable shortcode.
 
@@ -63,6 +63,11 @@ You can use this this rotating CSS card for presenting your team or to show more
 
 
 == Changelog ==
+
+= 1.0.2 =
+
+* Enqueue stylesheets only if shortcoe present
+* Remove damaging CSS from stylesheet. 
 
 = 1.0.1 =
 
