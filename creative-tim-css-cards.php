@@ -15,7 +15,8 @@ Domain Path: /lang/
 if ( !class_exists( 'Creative_Tim_Css_Cards' ) ) {
 
 	class Creative_Tim_Css_Cards {
-
+		
+		static $loaded = false;
 
 		public function __construct() {
 			self::define_constants();
@@ -42,7 +43,7 @@ if ( !class_exists( 'Creative_Tim_Css_Cards' ) ) {
 		public static function load_hooks() {
 		
 			/* Enqueue JS */
-			add_action( 'wp_enqueue_scripts', array( __CLASS__ , 'enqueue_supportive_scripts' ) );
+			add_action( 'wp_print_styles' , array( __CLASS__ , 'enqueue_supportive_scripts' ) );
 			
 			/* Add CSS Card Shortcode */
 			add_shortcode( 'card', array( __CLASS__, 'render_shortcode' ) );
@@ -56,7 +57,12 @@ if ( !class_exists( 'Creative_Tim_Css_Cards' ) ) {
 		*  Enqueue Supportive Scripts
 		*/
 		public static function enqueue_supportive_scripts( ) {
-
+			global $post;
+			
+			if ( !strstr( $post->post_content , '[card' ) ) {
+				return;
+			}
+			
 			/* BootStrap CSS */
 			wp_register_style( 'bootstrap' , CREATIVE_TIM_CARDS_URLPATH . 'assets/css/bootstrap.css');
 			wp_enqueue_style( 'bootstrap' );
@@ -75,6 +81,8 @@ if ( !class_exists( 'Creative_Tim_Css_Cards' ) ) {
 		*  Render [card] shortcode
 		*/
 		public static function render_shortcode( $atts , $content ) {
+			self::$loaded = true;
+
 			$atts = shortcode_atts( array(
 				'col_md' => '4',
 				'col_sm' => '6',
